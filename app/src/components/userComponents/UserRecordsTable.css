@@ -1,0 +1,12 @@
+
+.user-record-table caption {
+  background-color: blue;
+  color: white;
+  font-weight: 550;
+  border-radius: 10px;
+  padding: 8px;
+  margin-top: 50px;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

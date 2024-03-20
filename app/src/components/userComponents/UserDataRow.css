@@ -1,0 +1,13 @@
+
+.user-data-row td {
+  background-color: #00abf0;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.user-data-row:hover {
+  color: white;
+  font-weight: 550;
+  transition: .3s;
+}

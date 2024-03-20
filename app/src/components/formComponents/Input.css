@@ -1,0 +1,57 @@
+:root {
+  --bg-color: #081b29;;
+}
+
+
+.signup-form .input-group {
+  height: 85px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  position: relative;
+}
+
+.signup-form .input-group > h3 {
+  align-self: flex-start;
+  margin-left: 2%;
+  font-size: 1rem;
+  color: black;
+  font-family: var(--font-family);
+}
+
+.signup-form .input-group > input {
+  width: 95%;
+  height: 40px;
+  border: none;
+  outline: none ;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  font-size: 1rem;
+  text-indent: 40px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  flex-shrink: 0;
+}
+
+.signup-form .input-group .error-message {
+  align-self: flex-start;
+  margin-left: 2%;
+  color: yellow;
+  font-size: .8rem;
+  font-weight: 550;
+  font-family: var(--font-family);
+}
+
+
+.signup-form .input-group > img {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+}

@@ -1,0 +1,12 @@
+
+.button {
+  border: none;
+  border-radius: 10px;
+  background-color: blue;
+  font-weight: 550;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  color: white;
+  padding: 10px 20px;
+}
+

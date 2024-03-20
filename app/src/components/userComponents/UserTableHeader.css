@@ -1,0 +1,7 @@
+.user-table-header  th {
+  padding: 10px ;
+  background-color: royalblue;
+  color: white;
+  border-radius: 5px;
+  font-size: 12px;
+}
