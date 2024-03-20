@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link bootstrap libs -->
     <link rel="stylesheet" href="../../libs/bootstrap_lib/css/bootstrap.min.css">
-    <script src="../../libs/bootstrap_lib/js/bootstrap.min.js" defer></script>
-    <script src="../../libs/jquery_lib/dist/jquery.min.js" defer></script>
+    <script src="../../libs/bootstrap_lib/js/bootstrap.min.js"></script>
+    <script src="../../libs/jquery.min.js"></script>
     <title>Bootstrap</title>
 
     <style>
-        .box{
-            border: 2px solid black;
-            margin-top : 100px;
+        .bg{
+            border : 2px solid black;
+            background-color: antiquewhite;
             padding: 10px;
         }
     </style>
@@ -21,9 +21,25 @@
 
 <body> 
 
-    <div class="row box">
-       
-    </div>
+   <div class="container box">
+        <br> <h3 class="text-center">Grid System</h3> <br>
+        <div class="row">
+            <div class="col-md-4 bg text-center"> Box 1</div>
+            <div class="col-md-4 bg text-center"> Box 2</div>
+            <div class="col-md-4 bg text-center"> Box 2</div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col-md-2 bg text-center"> Box 1</div>
+            <div class="col-md-2 bg text-center"> Box 2</div>
+            <div class="col-md-2 bg text-center"> Box 3</div>
+            <div class="col-md-2 bg text-center"> Box 4</div>
+            <div class="col-md-2 bg text-center"> Box 5</div>
+            <div class="col-md-2 bg text-center"> Box 6</div>
+        </div>
+   </div>
 
 </body>
 
