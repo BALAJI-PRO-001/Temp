@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class Demo {
+        dataMemberCount = 3; // property
+        num1 = 100; // data members 
+        num2 = 200;
+        num3 = 300;
+
+        add() { // inside the class function called as method
+          return this.num1 + this.num2 + this.num3;
+        }
+      }
+
+      const demo = new Demo();
+      console.log("Property : ", demo.dataMemberCount);
+      console.log("Number 1 : ", demo.num1);
+      console.log("Number 2 : ", demo.num2);
+      console.log("Number 3 : ", demo.num3);
+      console.log("Sum : ", demo.add());
+
+    </script>
+  </body>
+</html> 
