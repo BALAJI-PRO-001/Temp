@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="create-btn">Create New Window</button>
+    <br> <br>
+    <button id="move-by">Move By</button>
+    <br><br>
+    <button id="move-to">Move To</button>
+    <script>
+      const createBTN = document.getElementById("create-btn");
+      const movebyBTN = document.getElementById("move-by");
+      const moveToBTN = document.getElementById("move-to");
+
+      let newWindow = null;
+      createBTN.onclick = () => {
+        newWindow = window.open("", undefined, "height=100,width=100");
+      }
+      
+      moveToBTN.onclick = () => {
+        newWindow.moveTo(100, 100);
+      }
+
+      movebyBTN.onclick = () => {
+        newWindow.moveBy(100, 100);
+      }
+    </script>
+  </body>  
+</html>

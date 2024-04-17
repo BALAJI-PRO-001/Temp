@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="create-btn">Create New Window</button>
+    <br> <br>
+    <button id="resize-by">Resize By</button>
+    <br><br>
+    <button id="resize-to">Resize To</button>
+    <script>
+      const createBTN = document.getElementById("create-btn");
+      const resizebyBTN = document.getElementById("resize-by");
+      const resizeToBTN = document.getElementById("resize-to");
+
+      let newWindow = null;
+      createBTN.onclick = () => {
+        newWindow = window.open("", undefined, "height=100,width=100");
+      }
+      
+      resizeToBTN.onclick = () => {
+        newWindow.resizeTo(100, 100);
+      }
+
+      resizebyBTN.onclick = () => {
+        newWindow.resizeBy(100, 100);
+      }
+    </script>
+  </body>  
+</html>

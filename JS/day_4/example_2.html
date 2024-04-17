@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="create-btn">Create New Window</button>
+    <br> <br>
+    <button id="close-btn">Close New Tab</button>
+    <script>
+      const createBTN = document.getElementById("create-btn");
+      const closeBTN = document.getElementById("close-btn");
+      let newWindow = null;
+      createBTN.onclick = () => {
+        newWindow = window.open("http://caddcae.com/", undefined, undefined);
+      }
+      closeBTN.onclick = () => {
+        newWindow.close();
+      }
+    </script>
+  </body>  
+</html>
