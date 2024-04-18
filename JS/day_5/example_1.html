@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="button">Stop</button>
+    <script>
+      const button = document.getElementById("button");
+      let i = 1;
+      const id = setInterval(() => {
+        console.log("Function call count: ", i++);
+      }, 1000);      
+
+      button.onclick = () => clearInterval(id);
+    </script>
+  </body>
+</html>
