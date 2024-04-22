@@ -1,0 +1,202 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+\moderncvstyle{banking}
+\moderncvcolor{blue}
+
+\usepackage[scale=0.75]{geometry}
+\usepackage{selinput}
+\SelectInputMappings{%
+  adieresis={ä},
+  eacute={é},
+  Lcaron={Ľ},   
+}
+
+\usepackage{hyperref}
+\firstname{Balaji T}
+\familyname{}
+
+\title{Fresher}
+\address{31 Devalagar Patti, Narasingapuram Post, A.Vellodu, Dindigul, TN 624307}{}
+\mobile{+91 9597761188}
+\email{balajibr0000@gmail.com}
+\photo[70pt][0.4pt]{pictures/picture}
+
+\begin{document}
+
+\makecvtitle
+
+\vspace{-2\baselineskip} % Adjust the value to your preference
+\section{Education}
+\cventry{2022}{B.Sc}{G.T.N College Of Arts, Dindigul}{Madurai Kamaraj University}{}{80.0}
+\cventry{2019}{HSC}{Govt Hr Sec School Narasingapuram}{State Board}{}{62.7}
+\cventry{2017}{SSLC}{Govt Hr Sec School Narasingapuram}{State Board}{}{91.8}
+
+\vspace{0\baselineskip} % Adjust the value to your preference
+\section{Experience}
+\cventry{2023--Present}{Technical Trainer}{CADD CAE Computers}{Dindigul}{}{
+\begin{itemize}
+    \item Conducted coding classes and served as a technical trainer.
+    \item Specialized in teaching programming languages and related technologies.
+    \item Developed and delivered curriculum tailored to student needs.
+    \item Provided guidance to students to facilitate their learning process.
+    \item Ensured a productive learning environment for all students.
+\end{itemize}
+}
+\section{Technical Skills}
+\cvitem{Web Technologies}{HTML5, CSS3 (Flexbox, Grid, Media Query), JavaScript (ES6+), AngularJS,
+AJAX, jQuery, Sass, React, Redux (Basic) }
+\cvitem{Back-End}{Node.js, Express.js}
+\cvitem{Databases}{MongoDB, MySQL}
+\cvitem{Other Languages}{TypeScript, C, C++, Java, Python}
+\cvitem{Java UI Libraries:}{AWT, Swing}
+\cvitem{Algorithms}{Data Structures}
+\cvitem{Version Control}{Git}
+\cvitem{Documentation}{MS Office}
+\cvitem{Tools \& IDEs}{VsCode, Pycharm, Intellij, Postman (API tester)}
+\cvitem{Operating Systems}{Windows, Linux}
+
+\vspace{3\baselineskip} % Adjust the value to your preference
+\section*{Additional Skills}
+\begin{itemize}
+    \item \textbf{Regex Patterns:} Experience in working with regular expressions (regex) for pattern matching and manipulation.
+    \item \textbf{REST API:} Knowledge and hands-on experience in designing and consuming RESTful APIs.
+\end{itemize}
+
+
+
+\section{Projects}
+\raggedright % Align the text to the left
+\cventry{}{User Management System}{HTML5, CSS3, JavaScript, AngularJS, AJAX, jQuery, Node.js, Express.js, MySQL}{}{}{%
+\begin{itemize}
+    \item Developed a comprehensive user management system utilizing a stack of modern web technologies.
+    \item Implemented features such as user registration, authentication, and profile management.
+    \item Utilized AngularJS for the front-end, Node.js and Express.js for the back-end.
+    \item Employed MongoDB and MySQL for data storage.
+    \item Incorporated AJAX and jQuery for enhanced user interactions.
+    \item Additionally, contributed to the project with Python and Django for certain functionalities.
+\end{itemize}
+}
+
+
+
+\section{Certification Courses}
+\vspace{-1\baselineskip} % Adjust the value to your preference
+\cventry{}{UDEMY - Professional Java Developer Career Started: Java Foundation}{}{}{}{}
+\vspace{-1\baselineskip} % Adjust the value to your preference
+\cventry{}{Skills Trainer - Domestic Data Entry Operator}{}{}{}{}
+\vspace{-1\baselineskip} % Adjust the value to your preference
+\cventry{}{Ministry of Electronics \& Information Technology (Meity) Government of India – Cyber Security}{}{}{}{}
+\vspace{-1\baselineskip} % Adjust the value to your preference
+\cventry{}{Hacker Rank – Java (Basic Certificate)}{}{}{}{}
+\vspace{-1\baselineskip} % Adjust the value to your preference
+\cventry{}{Cadd Cae Computers – C, C++ \& JAVA}{}{}{}{}
+\vspace{-1\baselineskip} % Adjust the value to your preference
+\cventry{}{IBM – BIG DATA (Level one certificate)}{}{}{}{}
+\vspace{0\baselineskip} % Adjust the value to your preference
+
+\section{Personal Details}
+\cvitem{Father Name}{N. Thirupathi Raja}
+\cvitem{Date of Birth}{28.03.2002}
+\cvitem{Gender}{Male}
+\cvitem{Marital Status}{Single}
+\cvitem{Nationality}{Indian}
+\cvitem{Languages}{Tamil, English}
+
+\end{document}
+
+
+
+
+// surya resume latax code 
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+\moderncvstyle{banking}
+\moderncvcolor{blue}
+
+\usepackage[scale=0.75]{geometry}
+\usepackage{selinput}
+\SelectInputMappings{%
+  adieresis={ä},
+  eacute={é},
+  Lcaron={Ľ},
+}
+
+\usepackage{hyperref}
+\firstname{Deepak Surya R}
+\familyname{}
+
+\title{ Fresher}
+\address{11/152,main road,
+Mylapore,
+Sinthalagundu(post),
+Dindigul,624002}{}
+\mobile{+91 9360773360}
+\email{deepaksurya2002dgl@gmail.com}
+\photo[70pt][0.4pt]{pictures/picture}
+
+\begin{document}
+
+\makecvtitle
+
+\vspace{-2\baselineskip} % Adjust the value to your preference
+\section{Education}
+\cventry{2022}{B.Sc (IT)}{G.T.N College Of Arts, Dindigul}{Madurai Kamaraj University}{}{74}
+
+\cventry{2019}{HSC}{St.Mary’s Higher
+Secondary School,
+Dindigul.}{State Board}{}{54}
+\cventry{2017}{SSLC}{St.Francis Xavier
+High School,
+Kuttathu
+Avarampapatti}{State Board}{}{86}
+
+\vspace{0\baselineskip} % Adjust the value to your preference
+\section{Experience}
+\cventry{2023--Present}{Technical Trainer}{CADD CAE Computers}{Dindigul}{}{
+\begin{itemize}
+    \item Conducted coding classes and served as a technical trainer.
+    \item Specialized in teaching programming languages and related technologies.
+    \item Developed and delivered curriculum tailored to student needs.
+    \item Provided guidance to students to facilitate their learning process.
+    \item Ensured a productive learning environment for all students.
+\end{itemize}
+}
+
+\vspace{0\baselineskip} % Adjust the value to your preference
+\section{Technical Skills}
+\cvitem{Web Technologies}{HTML5, CSS3, JavaScript(ES6+)}
+\cvitem{Back-End}{Node.js, Express.js}
+\cvitem{Databases}{MySQL}
+\cvitem{Other Languages}{C, C++, Java, Python}
+\cvitem{Java UI Libraries:}{AWT, Swing}
+\cvitem{Python UI Libraries:}{Tkinter}
+\cvitem{Algorithms}{Data Structures}
+\cvitem{Documentation}{MS Office}
+\cvitem{Tools \& IDEs}{VsCode, Postman (API tester)}
+\cvitem{Operating Systems}{Windows}
+
+\vspace{1\baselineskip} % Adjust the value to your preference
+\section*{Additional Skills}
+\begin{itemize}
+    \item \textbf{Regex Patterns:} Experience in working with regular expressions (regex) for pattern matching and manipulation.
+    \item \textbf{REST API:} Knowledge and hands-on experience in designing and consuming RESTful APIs.
+\end{itemize}
+
+
+
+\section{Certification Courses}
+\vspace{-1\baselineskip} % Adjust the value to your preference
+\cventry{}{Cadd Cae Computers – C, C++, Java \& Python}{}{}{}{}
+\vspace{-1\baselineskip} % Adjust the value to your preference
+\cventry{}{IBM – BIG DATA (Level one certificate)}{}{}{}{}
+\vspace{0\baselineskip} % Adjust the value to your preference
+
+\section{Personal Details}
+\cvitem{Father Name}{A.Robert Kennady}
+\cvitem{Date of Birth}{18.07.2002}
+\cvitem{Gender}{Male}
+\cvitem{Marital Status}{Single}
+\cvitem{Nationality}{Indian}
+\cvitem{Languages}{Tamil, English}
+
+\end{document}
