@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <label>Enter Number 1: </label>
+    <input type="text">
+    <br><br>
+
+    <label>Enter Number 2: </label>
+    <input type="text">
+    <br><br>
+
+    <button>Add</button>
+    <button>Sub</button>
+    <button>Mul</button>
+    <button>Div</button>
+    <button>Mod</button>
+
+    <p></p>
+
+    <script>
+      const inputElements = document.getElementsByTagName("input");
+      const buttonElements = document.getElementsByTagName("button");
+      const result = document.getElementsByTagName("p")[0];
+
+      buttonElements[0].onclick = () => {
+        const sum = Number(inputElements[0].value) + Number(inputElements[1].value);
+        result.innerHTML = `Result: ${sum}`;
+      }
+
+      buttonElements[1].onclick = () => {
+        const sum = Number(inputElements[0].value) - Number(inputElements[1].value);
+        result.innerHTML = `Result: ${sum}`;
+      }
+
+      buttonElements[2].onclick = () => {
+        const sum = Number(inputElements[0].value) * Number(inputElements[1].value);
+        result.innerHTML = `Result: ${sum}`;
+      }
+
+      buttonElements[3].onclick = () => {
+        const sum = Number(inputElements[0].value) / Number(inputElements[1].value);
+        result.innerHTML = `Result: ${sum}`;
+      }
+
+      buttonElements[4].onclick = () => {
+        const sum = Number(inputElements[0].value) % Number(inputElements[1].value);
+        result.innerHTML = `Result: ${sum}`;
+      }
+
+    </script>
+  </body>
+</html>

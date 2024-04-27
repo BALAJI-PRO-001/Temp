@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <label>Enter Number 1: </label>
+    <input type="text" id="input-1">
+    <br><br>
+
+    <label>Enter Number 2: </label>
+    <input type="text" id="input-2">
+    <br><br>
+
+    <button id="btn-1">Add</button>
+    <button id="btn-2">Sub</button>
+    <button id="btn-3">Mul</button>
+    <button id="btn-4">Div</button>
+    <button id="btn-5">Mod</button>
+
+    <p id="result"></p>
+
+    <script>
+      const input1 = document.getElementById("input-1");
+      const input2 = document.getElementById("input-2");
+      const addBTN = document.getElementById("btn-1");
+      const subBTN = document.getElementById("btn-2");
+      const mulBTN = document.getElementById("btn-3");
+      const divBTN = document.getElementById("btn-4");
+      const modBTN = document.getElementById("btn-5");
+      const result = document.getElementById("result");
+
+      addBTN.onclick = () => {
+        const sum = Number(input1.value) + Number(input2.value);
+        result.innerHTML = `Result: ${sum}`;
+      }
+
+      subBTN.onclick = () => {
+        const sum = Number(input1.value) - Number(input2.value);
+        result.innerHTML = `Result: ${sum}`;
+      }
+
+      mulBTN.onclick = () => {
+        const sum = Number(input1.value) * Number(input2.value);
+        result.innerHTML = `Result: ${sum}`;
+      }
+
+      divBTN.onclick = () => {
+        const sum = Number(input1.value) / Number(input2.value);
+        result.innerHTML = `Result: ${sum}`;
+      }
+
+      modBTN.onclick = () => {
+        const sum = Number(input1.value) % Number(input2.value);
+        result.innerHTML = `Result: ${sum}`;
+      }
+
+    </script>
+  </body>
+</html>
