@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.071);
+}
+
+.error-message {
+  font-family: sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  height: 100px;
+  min-width: 400px;
+  box-shadow: 2px 2px 5px black;
+  line-height: 100px;
+  text-align: center;
+}
+
+
+#container {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+table, tr, th, td {
+  border-collapse: collapse;
+  padding: 10px;
+  font-family: sans-serif;
+}
+
+td, th {
+  border: 2px solid blue;
+}
+
+tr:first-child {
+  background-color: blue;
+  color: white;
+}
+
+tr td > button {
+  border: none;
+  padding: 5px 8px;
+  color: white;
+  border-radius: 3px;
+  letter-spacing: 1px;
+}
+
+tr td > button:hover {
+  opacity: 0.7;
+}
+
+tr td:nth-child(4) > button {
+  background-color: rgb(8, 164, 8);
+}
+
+tr td:nth-child(5) > button {
+  background-color: red;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(128, 128, 128, 0.186);
+}

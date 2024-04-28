@@ -1,0 +1,43 @@
+header {
+  height: 60px;
+  width: 100%;
+  background-color: orange;
+  position: sticky;
+}
+
+header > h1 {
+  font-family: sans-serif;
+  font-size: 22px;
+  margin-left: 10%;
+  line-height: 60px;
+  color: white;
+  display: inline-block;
+}
+
+header .navbar {
+  height: 100%;
+  float: right;
+  margin-right: 10%;
+}
+
+
+header .navbar > a {
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 550;
+  line-height: 60px;
+  margin-left: 30px;
+  color: black;
+  border-radius: 5px;
+}
+
+
+header .navbar > .active {
+  color: blue;
+}
+
+header .navbar > a:hover {
+  color: blue;
+  transition: 300ms;
+}
