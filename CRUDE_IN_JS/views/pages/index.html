@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="../../public/css/index.css">
+    <link rel="stylesheet" href="../../public/css/header.component.css"> 
+    <script src="../../public/js/header.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>User Management System</h1>
+      <nav class="navbar">
+        <a href="" class="active">Home</a>
+        <a href="../forms/signup.html">Sign up</a> 
+        <a href="../forms/signin.html">Sign in</a> 
+      </nav>
+    </header>
+
+    <div id="container"></div>
+
+    <div id="message-container">
+      <img src="../../public/images/icons/alert-icon.png" alt="alert-icon">
+      <p>To get started with this app, please click on <span>Sign up</span> to create a new user account and baregin using the application.</p>
+      <a href="../forms/signup.html">Get Start!</a>
+    </div>
+
+    <div id="popup-menu">
+      <div class="query-box">
+        <img src="../../public/images/icons/alert-icon.png" alt="icon">
+        <p class="warn-message">Are you sure you want to delete your account?</p>
+        <p>Please enter your account password</p>
+        <input type="password" placeholder="Password . . . . " onload="(e) => arconsole.log(e.target.value)">
+        <p id="err-message"></p>
+        <button style="background-color: red;" class="confirm-btn">Confirm</button>
+        <button style="background-color: green" class="cancel-btn">Cancel</button>
+      </div>
+    </div>
+
+
+    <div id="popup-edit-menu">
+      <div class="edit-menu">
+        <p>Update</p>
+        <div class="input-group">
+          <input type="text" placeholder="Username . . . .">
+          <img src="../../public/images/icons/user-name-icon.png" alt="icon">
+          <p></p>
+        </div>
+        <div class="input-group">
+          <input type="text" placeholder="Email . . . .">
+          <img src="../../public/images/icons/email-icon.png" alt="icon">
+          <p></p>
+        </div>
+        <div class="input-group">
+          <input type="password" placeholder="Current password . . . .">
+          <img src="../../public/images/icons/lock-icon.png" alt="icon">
+          <p></p>
+        </div>
+        <div class="input-group">
+          <input type="password" placeholder="New password . . . .">
+          <img src="../../public/images/icons/lock-icon.png" alt="icon">
+          <p></p>
+        </div>
+        <p class="update-message" style="color: green; font-size: 14px;"></p>
+        <button style="background-color: green;" class="update-btn">Update</button>
+        <button style="background-color: red;" class="cancel-btn">Cancel</button>
+      </div>
+    </div>
+
+    <script src="../../public/js/index.js" type="module"></script>
+  </body>
+</html>
