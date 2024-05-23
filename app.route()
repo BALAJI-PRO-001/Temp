@@ -1,39 +1,25 @@
 const express = require("express");
 const app = express();
 
-
 function getMethodHandler(req, res) {
-  res.status(200).json({
-    message: "GET method work"
-  });
+  res.send("<h1> Method: GET </h1>");
 }
-
 
 function postMethodHandler(req, res) {
-  res.status(200).json({
-    message: "POST method work"
-  });
+  res.send("<h1> Method: POST </h1>");
 }
-
 
 function patchMethodHandler(req, res) {
-  res.status(200).json({
-    message: "PATCH method work"
-  });
+  res.send("<h1> Method: PATCH </h1>");
 }
-
 
 function deleteMethodHandler(req, res) {
-  res.status(200).json({
-    message: "DELETE method work"
-  });
+  res.send("<h1> Method: DELETE </h1>");
 }
-
 
 app.route("/").get(getMethodHandler)
               .post(postMethodHandler)
               .patch(patchMethodHandler)
               .delete(deleteMethodHandler);
-              
 
 app.listen(3000, () => console.log("Server is running ...."));
