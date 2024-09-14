@@ -1,2 +1,7 @@
 http://192.168.99.237:5173/
 https://meet.google.com/hqb-zjyu-mim
+
+
+ADMIN_EMAIL=admin@gmail.com
+ADMIN_PASSWORD=$2a$10$RJCcZU6pg0T26F/qBm0g2OPlazBmikYDuolMpZD8CAmMaa4w0xBVq
+JWT_SECRET_KEY=<@P1=>C:{DS,B}>
