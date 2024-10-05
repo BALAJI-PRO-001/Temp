@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Ajax</title>
+  </head>
+  <body>
+    <button id="button">Send Request</button>
+    <script>
+      const requestBTN = document.getElementById("button");
+
+      requestBTN.onclick = async () => {
+        await fetch("/users", {
+          headers: {"Content-Type": "application/json"},
+          method: "PATCH",
+          body: JSON.stringify({
+            newEmail: "ram@gmail.com",
+          })
+        });
+      }
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>Ajax</title>
+  </head>
+  <body>
+    <button id="button">Send Request</button>
+    <script>
+      const requestBTN = document.getElementById("button");
+
+      requestBTN.onclick = async () => {
+        await fetch("/users", {
+          method: "DELETE"
+        });
+      }
+
+    </script>
+  </body>
+</html>

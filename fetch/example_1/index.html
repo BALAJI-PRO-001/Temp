@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>Ajax</title>
+  </head>
+  <body>
+    <button id="button">Send Request</button>
+    <div id="container"></div>
+    <script>
+      const requestBTN = document.getElementById("button");
+      const container = document.getElementById("container");
+
+      requestBTN.onclick = async () => {
+        const res = await fetch("/users");
+        const data = await res.json();
+        container.innerText = JSON.stringify(data);
+      }
+
+    </script>
+  </body>
+</html>
