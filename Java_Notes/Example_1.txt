@@ -1,0 +1,29 @@
+import java.awt.*; 
+
+public class Main {
+  public static void main(String[] args) {
+    Frame frame = new Frame();
+    // frame.setSize(500, 500);
+    frame.setTitle("My App");
+
+    frame.setLocationRelativeTo(null);
+    frame.setResizable(false);
+    frame.setAlwaysOnTop(true);
+
+    frame.setBounds(200, 400, 500, 500);
+    // frame.setVisible(true);
+
+    // try {
+    //   Thread.sleep(3000);
+    //   frame.dispose();
+    // } catch(Exception e) {
+    //   System.out.println(e);
+    // }
+
+    System.out.println(frame.getTitle());
+    System.out.println(frame.getHeight());
+    System.out.println(frame.getWidth());
+    System.out.println(frame.getX());
+    System.out.println(frame.getY());
+  }
+}

@@ -1,0 +1,37 @@
+import java.awt.*; 
+import java.awt.event.*;
+
+public class Main {
+  public static void main(String[] args) {
+    Frame frame = new Frame();
+    frame.setSize(500, 500);
+    frame.setLayout(null);
+    frame.setLocationRelativeTo(null);
+
+    MenuBar menuBar = new MenuBar();
+    Menu menu = new Menu("File");
+
+    MenuItem item1 = new MenuItem("Cut");
+    MenuItem item2 = new MenuItem("Copy");
+    MenuItem item3 = new MenuItem("Paste");
+
+    item1.setFont(new Font(null, Font.BOLD, 30));
+    item2.setFont(new Font(null, Font.BOLD, 30));
+    item3.setFont(new Font(null, Font.BOLD, 30));
+
+    item1.addActionListener(new ActionListener() {
+      public void actionPerformed(ActionEvent e) {
+        System.out.println("Cut");
+      }
+    });
+
+    menu.add(item1);
+    menu.add(item2);
+    menu.add(item3);
+
+    menuBar.add(menu);
+    frame.setMenuBar(menuBar);
+
+    frame.setVisible(true);
+  }
+}

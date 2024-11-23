@@ -1,0 +1,45 @@
+import java.awt.*; 
+import java.awt.event.*;
+
+public class Main {
+  public static void main(String[] args) {
+    Frame frame = new Frame();
+    frame.setSize(500, 500);
+    frame.setLayout(null);
+    frame.setLocationRelativeTo(null);
+
+    PopupMenu popupMenu = new PopupMenu();
+
+    MenuItem item1 = new MenuItem("Cut");
+    MenuItem item2 = new MenuItem("Copy");
+    MenuItem item3 = new MenuItem("Paste");
+
+    item1.setFont(new Font(null, Font.BOLD, 30));
+    item2.setFont(new Font(null, Font.BOLD, 30));
+    item3.setFont(new Font(null, Font.BOLD, 30));
+
+    item1.addActionListener(new ActionListener() {
+      public void actionPerformed(ActionEvent e) {
+        System.out.println("Cut");
+      }
+    });
+
+    popupMenu.add(item1);
+    popupMenu.add(item2);
+    popupMenu.add(item3);
+
+    frame.add(popupMenu);
+    frame.setVisible(true);
+
+    frame.addMouseListener(new MouseListener() {
+      public void mouseClicked(MouseEvent e) {
+        popupMenu.show(frame, e.getX(), e.getY());
+      }
+
+      public void mousePressed(MouseEvent e) {}  
+      public void mouseReleased(MouseEvent e) {} 
+      public void mouseEntered(MouseEvent e) {} 
+      public void mouseExited(MouseEvent e) {}
+    });
+  }
+}

@@ -1,0 +1,28 @@
+import java.awt.*; 
+import java.awt.event.*;
+
+public class Main {
+  public static void main(String[] args) {
+    Frame frame = new Frame();
+    frame.setSize(500, 500);
+    frame.setLayout(null);
+    frame.setLocationRelativeTo(null);
+
+    Button button = new Button();
+    button.setLabel("Click");
+    button.setBounds(100, 200, 200, 50);
+    button.setFont(new Font(null, Font.BOLD, 30));
+    button.setBackground(Color.RED);
+    button.setForeground(Color.black);
+    frame.add(button);
+
+    button.addActionListener(new ActionListener() {
+      public void actionPerformed(ActionEvent e) {
+        frame.setBackground(Color.BLACK);
+      }
+    });
+
+
+    frame.setVisible(true);
+  }
+}

@@ -1,0 +1,37 @@
+import java.awt.*; 
+import java.awt.event.*;
+
+public class Main {
+  public static void main(String[] args) {
+    Frame frame = new Frame();
+    frame.setSize(500, 500);
+    frame.setLayout(null);
+    frame.setLocationRelativeTo(null);
+
+    Font font = new Font(null, Font.BOLD, 30);
+
+    Checkbox box = new Checkbox("Check Me");
+    box.setFont(font);
+    box.setBounds(100, 100, 200, 100);
+    box.setFocusable(false);
+    frame.add(box);
+
+
+    Button button = new Button();
+    button.setLabel("Click");
+    button.setBounds(100, 200, 200, 50);
+    button.setFont(font);
+    button.setBackground(Color.RED);
+    button.setForeground(Color.black);
+    frame.add(button);
+
+    button.addActionListener(new ActionListener() {
+      public void actionPerformed(ActionEvent e) {
+        System.out.println(box.getState());
+      }
+    });
+
+
+    frame.setVisible(true);
+  }
+}

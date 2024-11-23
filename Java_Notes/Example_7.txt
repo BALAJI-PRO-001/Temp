@@ -1,0 +1,51 @@
+import java.awt.*; 
+import java.awt.event.*;
+
+public class Main {
+  public static void main(String[] args) {
+    Frame frame = new Frame();
+    frame.setSize(500, 500);
+    frame.setLayout(null);
+    frame.setLocationRelativeTo(null);
+
+    Font font = new Font(null, Font.BOLD, 30);
+
+    CheckboxGroup gender = new CheckboxGroup();
+
+    Checkbox maleCheckbox = new Checkbox("Male");
+    maleCheckbox.setFont(font);
+    maleCheckbox.setBounds(50, 100, 200, 50);
+    maleCheckbox.setCheckboxGroup(gender);
+    frame.add(maleCheckbox);
+
+    Checkbox femaleCheckbox = new Checkbox("Female");
+    femaleCheckbox.setFont(font);
+    femaleCheckbox.setBounds(50, 200, 200, 50);
+    femaleCheckbox.setCheckboxGroup(gender);
+    frame.add(femaleCheckbox);
+
+
+    Button button = new Button();
+    button.setLabel("Click");
+    button.setBounds(100, 300, 200, 50);
+    button.setFont(font);
+    button.setBackground(Color.RED);
+    button.setForeground(Color.black);
+    frame.add(button);
+
+    button.addActionListener(new ActionListener() {
+      public void actionPerformed(ActionEvent e) {
+        if (maleCheckbox.getState()) {
+          System.out.println("Male");
+        }
+
+        if (femaleCheckbox.getState()) {
+          System.out.println("Female");
+        }
+      }
+    });
+
+
+    frame.setVisible(true);
+  }
+}

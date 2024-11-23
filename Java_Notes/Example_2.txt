@@ -1,0 +1,29 @@
+import java.awt.*; 
+
+public class Main {
+  public static void main(String[] args) {
+    Frame frame = new Frame();
+    frame.setSize(500, 500);
+    frame.setLayout(null);
+    frame.setLocationRelativeTo(null);
+
+    Label label = new Label();
+    label.setText("HI");
+    label.setBounds(100, 200, 100, 50);
+    label.setFont(new Font(null, Font.BOLD, 50));
+    label.setBackground(Color.RED);
+    label.setForeground(Color.YELLOW);
+    frame.add(label);
+    frame.setVisible(true);
+
+    for (int i = 1; i <= 100000; i++) {
+      try {
+        Thread.sleep(1000);
+        label.setText(String.valueOf(i));
+      } catch(Exception e) {
+        System.out.println(e);
+      }
+    }
+
+  }
+}
