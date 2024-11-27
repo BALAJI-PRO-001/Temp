@@ -1,0 +1,11 @@
+Name,RegNo,m1,m2,m3,Result
+Alice Smith,101,85,90,88,Pass
+Bob Johnson,102,70,NaN,80,Pass
+Charlie Brown,103,45,50,NaN,Fail
+Daisy Lee,104,NaN,88,95,Pass
+Ethan Davis,105,60,58,65,Pass
+Fiona Garcia,106,40,NaN,38,Fail
+George Harris,107,75,80,85,Pass
+Hannah Wilson,NaN,50,48,52,Fail
+Ian Martinez,109,88,92,NaN,Pass
+Jane Clark,110,68,70,NaN,Pass
